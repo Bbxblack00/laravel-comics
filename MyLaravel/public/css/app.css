@@ -26,9 +26,10 @@
 }
 
 .container .row.current .lt-title {
-  position: absolute;
-  left: auto;
-  z-index: 1;
+  content: "";
+  display: table;
+  clear: both;
+  background-color: black;
 }
 
 .container ul {
