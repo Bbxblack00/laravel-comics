@@ -10,7 +10,9 @@
 
         <div class="lt-title">
 
-            
+            @foreach ($collection as $item)
+                
+            @endforeach
 
         </div>
 
