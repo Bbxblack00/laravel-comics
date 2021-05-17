@@ -7,15 +7,39 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: darkgoldenrod;
-}
-
 .container {
     display: flex;
 
+    height: 100%;
+    width: 100%;
+
     align-items: center;
     justify-content: space-around;
+
+    .row {
+        content: "";
+    	display: table;
+        clear: both;
+
+        padding: 0 auto;
+
+        img{
+            width: 100vw;
+
+            position: relative;
+            z-index: 0;
+        }
+    }
+
+    .row.current {
+        
+
+        .lt-title {
+            position: absolute;
+            left: auto;
+            z-index: 1;
+        }
+    }
 
     ul {
         list-style: none;
