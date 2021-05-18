@@ -65,3 +65,11 @@
         }
     }
 }
+
+.container.main {
+    flex-wrap: wrap;
+
+    .card {
+        width: 150px;
+    }
+}
