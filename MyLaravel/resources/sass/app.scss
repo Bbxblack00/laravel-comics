@@ -23,27 +23,45 @@
 
         padding: 0 auto;
 
-        img{
+        .jt {
+            background-image: url('/storage/assets/jumbotron.jpg');
+
             width: 100vw;
-
-            position: relative;
-            z-index: 0;
-        }
-    }
-
-    .row.current {
-        
-
-        .lt-title {
-            content: "";
-            display: table;
-            clear: both;
-
-            background-color: black;
+            height: 500px;
         }
     }
 
     ul {
         list-style: none;
+    }
+}
+
+.container.hed {
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        flex-direction: column;
+
+
+        .lst-menu {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                &:hover {
+                    border-bottom: 3px solid skyblue ;
+                }
+
+                a{
+                    color: lightslategray;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: skyblue;
+                    }
+                }
+            }
+        }
     }
 }
