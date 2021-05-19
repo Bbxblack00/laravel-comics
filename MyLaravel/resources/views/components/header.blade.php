@@ -6,7 +6,7 @@
         <div class="row">
 
             <div class="logo">
-                <img src="{{ asset ('/storage/asssets/dc-logo.png ') }}" alt="">
+                <img src="{{ asset ('/storage/assets/dc-logo.png ') }}">
             </div>
 
             <div class="menu">

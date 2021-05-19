@@ -35,25 +35,43 @@
 
 .container.hed .row {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container.hed .row .logo {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 5px;
+}
+
+.container.hed .row .logo img {
+  height: 35px;
 }
 
 .container.hed .row .lst-menu {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container.hed .row .lst-menu li {
+  padding: 10px;
+  border-bottom: 3px solid white;
 }
 
 .container.hed .row .lst-menu li:hover {
   border-bottom: 3px solid skyblue;
 }
 
-.container.hed .row .lst-menu li a {
-  color: lightslategray;
-}
-
-.container.hed .row .lst-menu li a:hover {
+.container.hed .row .lst-menu li:hover a {
   text-decoration: none;
   color: skyblue;
+}
+
+.container.hed .row .lst-menu li a {
+  color: lightslategray;
+  text-decoration: none;
 }
 
 .container.main {

@@ -14,7 +14,9 @@
             @foreach ($comics as $comic)
 
             <div class="card" style="background-image: url({{ $comic['thumb']}})">
-                <h3>{{ $comic['title'] }}</h3>
+                <a href="{{ route('elem', $loop->index) }}">
+                    {{ $comic['title'] }}
+                </a>
             </div>
                 
             @endforeach
