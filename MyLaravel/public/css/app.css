@@ -75,10 +75,19 @@
 }
 
 .container.main {
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 20%;
+  background-color: black;
+}
+
+.container.main .tit-home {
+  position: absolute;
 }
 
 .container.main .card {
-  width: 150px;
+  width: 170px;
+  height: 280px;
+  margin: 10px;
 }
 
