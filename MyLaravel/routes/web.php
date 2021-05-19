@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'ControllerHome@home')
     -> name('home');
 
-Route::get('/elem/{id}', 'ControllerHome@home')
+Route::get('/elem/{id}', 'ControllerHome@elem')
     -> name('elem');
