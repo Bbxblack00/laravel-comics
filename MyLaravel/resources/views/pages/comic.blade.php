@@ -6,9 +6,8 @@
 
         <section class="container main">
             <div class="tit-home">
-                <h1>
-                    CURRENT SERIES
-                </h1>
+                <div class="card" style="background-image: url({{ $elem['thumb']}})">
+                </div>
             </div>
 
     </main>

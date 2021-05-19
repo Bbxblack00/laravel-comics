@@ -96,6 +96,15 @@
 
     .tit-home {
         position: absolute;
+
+        top: 450px;
+        left: 20%;
+
+        z-index: 3;
+
+        content: "";
+    	display: table;
+        clear: both;
     }
 
     .card {
