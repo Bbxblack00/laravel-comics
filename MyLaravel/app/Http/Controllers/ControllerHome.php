@@ -226,7 +226,7 @@ class ControllerHome extends Controller
         return view('pages.home', compact('comics'));
     }
 
-    public function elem() {
+    public function elem($index) {
 
         $comics = [
             [
@@ -442,6 +442,8 @@ class ControllerHome extends Controller
             ],
         ];
 
-        return view('pages.comic', compact('comics'))
+        $elem = $comics[$index];
+
+        return view('pages.comic', compact('elem'));
     }
 }
