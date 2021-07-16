@@ -1,120 +1,13 @@
-// pagina principale css
 
 * {
     margin: 0;
     padding: 0;
-
+    
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
 
-    height: 100%;
-    width: 100%;
+// pages style link
 
-    align-items: center;
-    justify-content: space-around;
-
-    .row {
-        content: "";
-    	display: table;
-        clear: both;
-
-        padding: 0 auto;
-
-        .jt {
-            background-image: url('/storage/assets/jumbotron.jpg');
-
-            width: 100vw;
-            height: 500px;
-        }
-    }
-
-    ul {
-        list-style: none;
-    }
-}
-
-.container.hed {
-    flex-direction: column;
-
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-
-        .logo {
-            content: "";
-        	display: table;
-            clear: both;
-
-            padding: 5px;
-
-            img {
-                height: 35px;
-            }
-        }
-
-
-        .lst-menu {
-            display: flex;
-            justify-content: space-around;
-
-            li {
-                padding: 10px;
-
-                border-bottom: 3px solid white;
-
-                &:hover {
-                    border-bottom: 3px solid skyblue ;
-
-                    a {
-                        text-decoration: none;
-                        color: skyblue;
-                    }
-                }
-
-                a{
-                    color: lightslategray;
-
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-.container.main {
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    padding: 0 20%;
-
-    background-color: black;
-
-    .tit-home {
-        position: absolute;
-
-        top: 450px;
-        left: 20%;
-
-        z-index: 3;
-
-        content: "";
-    	display: table;
-        clear: both;
-    }
-
-    .card {
-        width: 170px;
-        height: 280px;
-
-        margin: 10px;
-    }
-}
-
-.elem {
-    background-color: white;
-}
+@import "pgs-layout/card";
+@import "pgs-layout/home";
